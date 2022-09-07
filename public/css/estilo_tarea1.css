@@ -1,0 +1,38 @@
+p{
+    background-color: darkblue;
+    font-family: Monaco;
+    color: white;
+    background-color: black;
+}
+h1{
+    font-size: 30px;
+    font-family: Monaco;
+    color: black;
+}
+h2{
+    font-size: 20px;
+    font-family: Monaco;
+    color: black;
+}
+h3{
+    font-size: 18px;
+    font-family: Monaco;
+    color: black;
+}
+div {
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#title{
+    align-items: center;
+}

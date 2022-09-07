@@ -44,6 +44,11 @@ app.post('/post', (request, response) => {
     response.send(`<h1>${reqJson.name}</h1>`);
 });
 
+// Tarea 1
+app.get('/tarea1', (request, response) => {
+    response.sendFile(path.join(__dirname, 'views', 'index_tarea1.html'));
+});
+
 /*
 const app1 = express();
 
