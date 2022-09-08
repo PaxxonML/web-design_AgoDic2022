@@ -3,6 +3,8 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const consolaRoutes = require('./routes/consola');
+const palindromoRoutes = require('./routes/palindromo');
+const idiomaFRoutes = require('./routes/idiomaF');
 
 const app = express();
 
@@ -40,6 +42,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use('/consola', consolaRoutes);
+app.use('/palindromo', palindromoRoutes);
+app.use('/idiomaF', idiomaFRoutes);
 
 app.post('/post', (request, response) => {
     reqJson = request.body;
