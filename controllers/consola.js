@@ -7,6 +7,9 @@ exports.getAltaConsola = (request, response) => {
 
 exports.postAltaConsola = (request, response) => {
     console.log(request.body);
+
+
+    //Codigo
     response.json({estado:"Exitoso"});
 }
 
