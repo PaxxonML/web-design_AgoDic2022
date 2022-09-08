@@ -12,5 +12,5 @@ exports.postCheckPalindromo = (request, response) => {
     let resultado = palindromo === palindromoReverse;
 
     //Codigo
-    response.json({isPalindromo: resultado});
+    response.json({palabra: palindromo,isPalindromo: resultado});
 }
