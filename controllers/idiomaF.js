@@ -6,7 +6,7 @@ exports.getTranslation = (request, response) => {
 }
 
 exports.postTranslation = (request, response) => {
-    let palabra = request.body.palabra;
+    let palabra = request.body.palabra.lowerCase();
     console.log(palabra);
     let traducida = '', nextSubstring = '';
     let i = 0;
