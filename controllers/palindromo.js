@@ -7,10 +7,11 @@ exports.getCheckPalindromo = (request, response) => {
 
 exports.postCheckPalindromo = (request, response) => {
     console.log(request.body);
-    let palindromo = request.body.palindromo.lowerCase();
+    let palindromoOriginal = request.body.palindromo;
+    let palindromo = palindromoOriginal.toLowerCase();
     let palindromoReverse = palindromo.split('').reverse().join('');
     let resultado = palindromo === palindromoReverse;
 
     //Codigo
-    response.json({palabra: palindromo,isPalindromo: resultado});
+    response.json({palabra: palindromoOriginal,isPalindromo: resultado});
 }
