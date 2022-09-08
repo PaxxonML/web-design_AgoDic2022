@@ -13,3 +13,5 @@ router.post('/altaConsola', consolaController.postAltaConsola);
 // GET /consola/consultaConsola
 // Servicio para mostrar el formulario de consulta de consola
 router.get('/consultaConsola', consolaController.getConsultaConsola);
+
+module.exports = router;

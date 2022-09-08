@@ -38,7 +38,7 @@ app.listen(8080, ()=>{
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
-app.use("/consola", consolaRoutes);
+app.use('/consola', consolaRoutes);
 
 app.post('/post', (request, response) => {
     reqJson = request.body;
