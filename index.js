@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const consolaRoutes = require('./routes/consola');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.listen(8080, ()=>{
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
+app.use("/consola", consolaRoutes);
 
 app.post('/post', (request, response) => {
     reqJson = request.body;
