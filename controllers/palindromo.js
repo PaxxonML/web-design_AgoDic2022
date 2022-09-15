@@ -8,8 +8,10 @@ exports.getCheckPalindromo = (request, response) => {
 exports.postCheckPalindromo = (request, response) => {
     console.log(request.body);
     let palindromoOriginal = request.body.palindromo;
-    let palindromo = palindromoOriginal.toLowerCase();
+    let palindromo = palindromoOriginal.toLowerCase().split(" ").join("");
+    console.log(palindromo);
     let palindromoReverse = palindromo.split('').reverse().join('');
+    console.log(palindromoReverse);
     let resultado = palindromo === palindromoReverse;
 
     //Codigo
